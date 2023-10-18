@@ -125,6 +125,10 @@ func (log *HcLogToLogger) ResetNamed(name string) hclog.Logger {
 	return &HcLogToLogger{name: name}
 }
 
+func (log *HcLogToLogger) GetLevel() hclog.Level {
+	return hclog.Level(hclog.Info)
+}
+
 func (log *HcLogToLogger) SetLevel(level hclog.Level) {}
 
 func (log *HcLogToLogger) StandardLogger(opts *hclog.StandardLoggerOptions) *log.Logger {

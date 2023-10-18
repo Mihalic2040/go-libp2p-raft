@@ -1,4 +1,4 @@
-module github.com/Mihalic2040/go-libp2p-raft
+module github.com/libp2p/go-libp2p-raft
 
 require (
 	github.com/hashicorp/go-hclog v1.3.0
